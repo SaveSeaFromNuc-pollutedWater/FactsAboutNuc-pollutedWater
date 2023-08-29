@@ -43,12 +43,12 @@ jobs:
         with:
           ref: release
       - run: |
-          # echo '如果存在则删除 ./zh-Hans-CN：'
-          # if [ -d "./zh-Hans-CN/" ];then
+          echo '如果存在则删除 ./zh-Hans-CN：'
+          if [ -d "./zh-Hans-CN/" ];then
           rm -r ./zh-Hans-CN/
-          # else
-          # echo "文件夹不存在。"
-          # fi;
+          else
+          echo "文件夹不存在。"
+          fi;
           echo '复制 /home/runner/tree/zh-Hans-CN/ 到 ./zh-Hans-CN/：'
           cp -v -u -r /home/runner/tree/zh-Hans-CN/ ./zh-Hans-CN/
           ls ./zh-Hans-CN/
