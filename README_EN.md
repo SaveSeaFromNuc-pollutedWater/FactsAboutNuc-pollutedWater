@@ -1,3 +1,6 @@
+<p align="center">
+    <img height="128" src='https://Nuc.PJ568.eu.org/zh-Hans-CN/favicon.svg'/>
+</p>
 <h1 align="center">
     Facts About Nuclear-Polluted Water
 </h1>
