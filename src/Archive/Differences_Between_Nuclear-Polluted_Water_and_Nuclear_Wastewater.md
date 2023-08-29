@@ -6,7 +6,7 @@
 
 | | 产出方式 | 放射性同位素种类 | 放射性同位素含量 |
 |--:|:--|:--|:--|
-| 福岛核电站事故中的核污染水 | 直接接触反应堆中放射性物质的地下水、雨水、海水等混合稀释后处理 | 根据[东京电力公司数据](https://www4.tepco.co.jp/en/press/corp-com/release/2012/1205638_1870.html)，核污染水中包含63种放射性物质，包含：铯134、铯137、锶90、碳14、碘129、钴60、钌106、放射性氚（超重水）等 | 惰性气体：~500[PBq](#pbq)；<br/>碘131：~500[PBq](#pbq)；<br/>铯134：~10[PBq](#pbq)；<br/>铯137：~10[PBq](#pbq)；<br/>使用[国际核事件分级](#twi)评价（参考）：~900[PBq](#pbq)。[②](#twi)|
+| 福岛核电站事故中的核污染水 | 直接接触反应堆中放射性物质的地下水、雨水、海水等混合稀释后处理 | 根据[东京电力公司数据](https://www4.tepco.co.jp/en/press/corp-com/release/2012/1205638_1870.html)，核污染水中包含63种放射性物质，包含：铯134、铯137、锶90、碳14、碘129、钴60、钌106、放射性氚（超重水）等（实际上由于核心直接接触，可能包含铀等超过63种放射性元素） | 惰性气体：~500[PBq](#pbq)；<br/>碘131：~500[PBq](#pbq)；<br/>铯134：~10[PBq](#pbq)；<br/>铯137：~10[PBq](#pbq)；<br/>使用[国际核事件分级](#twi)评价（参考）：~900[PBq](#pbq)。[②](#twi)|
 | 标准核废水 | 工业产生水、地面排水、设备清洗、冷却水等经过处理 | [详见③](#gov) | 气态放射性流出物：惰性气体7.00E+14Bq；碘2.50E+10Bq；粒子（半衰期≥8d）3.80E+09Bq；碳14 2.20E+12Bq；气态氚2.40E+13Bq；液体放射性流出物：碳14 3.00E+11Bq；液态氚2.25E+14Bq；其余核素1.30E+11Bq。[③](#gov) |
 
 >“`~`”符号表示“`约等于`”。
@@ -45,22 +45,20 @@
 
 > 福岛核电站事故中的核污水具体是指核反应堆泄漏，从而与被污染过的地下水、雨水、海水等混合后形成的核污染水。
 >
-> 日本东京电力公司的“多核素去除装置”（ALPS）[无法去除放射性氚或碳 14 ，不能完全去除其他放射性同位素，如锶 90 、碘 129 和钴 60](https://www.tepco.co.jp/decommission/data/analysis/pdf_csv/2023/2q/water_230825-j.pdf) 。
+> 日本东京电力公司的“多核素去除装置”（ALPS）[无法去除放射性氚或碳 14 ，不能完全去除其他放射性同位素，如锶 90 、碘 129 和钴 60](https://www.greenpeace.org/eastasia/blog/6540/a-quick-read-on-the-radioactive-water-in-fukushima-what-makes-it-different/) 。
 >
-> 东京电力公司曾经先后在1978年、2002年及2007年涉及核安全事故，并屡次瞒报、更改历史信息。目前已有多名科学家对日本方面公布的数据提出质疑，认为其数据不完整、不连贯、存在偏差。
+> 东京电力公司曾经先后在1978年、2002年及2007年涉及核安全事故，并[屡次瞒报](https://www.globaltimes.cn/page/202306/1291969.shtml)、更改历史信息。目前已有[多名科学家对日本方面公布的数据提出质疑，认为其数据不完整、不连贯、存在偏差。](https://www.globaltimes.cn/page/202306/1291969.shtml)
 
 ### 核废水
 
 **核废水**指的是来自核电站日常活动中产生的废水，**不会接触到核反应堆中的放射性物质**，因此具有较**低的放射性水平**。
 
-## 附链
+## 信息来源
 
 - [《关于大亚湾核电基地六台机组放射性流出物年排放量限值的批复》](https://www.mee.gov.cn/gkml/sthjbgw/haq/201707/t20170717_417967.htm)
+- [A Quick Read on the radioactive water in Fukushima – What makes it different?](https://www.greenpeace.org/eastasia/blog/6540/a-quick-read-on-the-radioactive-water-in-fukushima-what-makes-it-different/)
 - [日本东京电力公司新闻稿（2012年6月20日）](https://www4.tepco.co.jp/en/press/corp-com/release/2012/1205638_1870.html)
 - [Fukushima Nuclear Accidents Investigation Report: Main body (Summary) (PDF 750KB)](https://www4.tepco.co.jp/en/press/corp-com/release/betu12_e/images/120620e0102.pdf)
-- [Fukushima Nuclear Accidents Investigation Report: Main body (Summary, Attachment) (PDF 131KB)](https://www4.tepco.co.jp/en/press/corp-com/release/betu12_e/images/120620e0103.pdf)
-- [Fukushima Nuclear Accidents Investigation Report: Main body (PDF 10.3MB)](https://www4.tepco.co.jp/en/press/corp-com/release/betu12_e/images/120620e0104.pdf)
-- [Fukushima Nuclear Accidents Investigation Report (Appendix-1) Statement of the Prime Minister's Office regarding decommissioning (PDF 158KB)](https://www4.tepco.co.jp/en/press/corp-com/release/betu12_e/images/120620e0105.pdf)
-- [Fukushima Nuclear Accidents Investigation Report (Appendix-2) Schedule(Time series) (PDF 1.98MB)](https://www4.tepco.co.jp/en/press/corp-com/release/betu12_e/images/120620e0101.pdf)
-- [Fukushima Nuclear Accidents Investigation Report (Attachment) (PDF 28.1MB)](https://www4.tepco.co.jp/en/press/corp-com/release/betu12_e/images/120620e0106.pdf)
-- [Major changes made on the interim report issued on December 2, 2011 (PDF 764KB)](https://www4.tepco.co.jp/cc/press/betu12_j/images/120620j0307.pdf)
+- [Situation of Storage and Treatment of Accumulated Water containing Highly Concentrated Radioactive Materials at Fukushima Daiichi Nuclear Power Station (496th Release)](https://www.tepco.co.jp/en/hd/decommission/information/newsrelease/watermanagement/pdf/2021/watermanagement_20210405-e.pdf)
+- [GT exclusive: Detailed evidence exposes Japan’s lies, loopholes in nuclear-contaminated wastewater dumping plan](https://www.globaltimes.cn/page/202306/1291969.shtml)
+- [New Definition of ALPS Treated Water and the Amount of Tritium in Water being stored in Tanks](https://www4.tepco.co.jp/en/decommission/progress/watertreatment/images/20210427.pdf)
