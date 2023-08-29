@@ -1,0 +1,24 @@
+[book]
+authors = ["PJ568"]
+language = "zh-CN"
+multilingual = false
+src = "src"
+title = "核污染水的真相"
+description = "致力于反对核污染水排海并提供可能的解决方案。"
+
+[output.html]
+site-url = "/zh-Hans-CN/"
+additional-js = ["assets/giscus.js"]
+git-repository-url = "https://github.com/SaveSeaFromNuc-pollutedWater/FactsAboutNuc-pollutedWater/tree/zh-Hans-CN"
+edit-url-template = "https://github.com/SaveSeaFromNuc-pollutedWater/FactsAboutNuc-pollutedWater/edit/zh-Hans-CN/{path}"
+
+[output.html.fold]
+enable = true
+level = 0
+
+[preprocessor.index]
+
+[preprocessor.links]
+
+[output.html.search]
+limit-results = 15
