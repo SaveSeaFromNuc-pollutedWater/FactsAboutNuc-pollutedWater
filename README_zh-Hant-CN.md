@@ -1,5 +1,5 @@
 <p align="center">
-    <img height="128" src='https://Nuc.PJ568.eu.org/zh-Hans-CN/favicon.svg'/>
+    <a href="https://Nuc.PJ568.eu.org"><img height="128" src='https://Nuc.PJ568.eu.org/zh-Hans-CN/favicon.svg'/></a>
 </p>
 <h1 align="center">
     核汙染水的真相
@@ -12,6 +12,8 @@
      繁體中文 |
     <a href="README_EN.md"> English</a>
 </h4>
+
+<p align="center"><a href="https://Nuc.PJ568.eu.org">訪問網站</a></p>
 
 歡迎並感謝訪問我們的網站，這是一個致力於反對核汙染水排海並提供可能的解決方案的平臺。我們旨在提供全面的相關資料，以便公眾了解和關註這個重要議題。核汙染水對環境和人類健康造成嚴重威脅，我們堅信通過集結信息和共同努力，可以達到更清潔和可持續的解決方案。
 

@@ -1,5 +1,5 @@
 <p align="center">
-    <img height="128" src='https://Nuc.PJ568.eu.org/zh-Hans-CN/favicon.svg'/>
+    <a href="https://Nuc.PJ568.eu.org"><img height="128" src='https://Nuc.PJ568.eu.org/zh-Hans-CN/favicon.svg'/></a>
 </p>
 <h1 align="center">
     Facts About Nuclear-Polluted Water
@@ -12,6 +12,8 @@
     <a href="README_zh-Hant-CN.md"> 繁體中文</a> |
      English
 </h4>
+
+<p align="center"><a href="https://Nuc.PJ568.eu.org">Visit the website</a></p>
 
 Welcome and thank you for visiting our website. This is a platform dedicated to opposing the dischargement of nuclear-polluted water into the sea and providing potential solutions. We aim to offer comprehensive information to help the public understand and engage with this critical issue. Nuclear-polluted water poses a significant threat to the environment and human health, and we strongly believe that by gathering information and working together, cleaner and more sustainable solutions can be achieved.
 
