@@ -1,7 +1,7 @@
 # Summary
 
-[关于`核污染水的真相`](./index.md)
-[关于`核污染水`论坛](./Community.md)
+[`日本核污染水排海`事件](./index.md)
+[`核污染水`论坛](./Community.md)
 
 ---
 
