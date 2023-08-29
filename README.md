@@ -1,5 +1,5 @@
 <p align="center">
-    <img height="128" src='https://Nuc.PJ568.eu.org/zh-Hans-CN/favicon.svg'/>
+    <a href="https://Nuc.PJ568.eu.org"><img height="128" src='https://Nuc.PJ568.eu.org/zh-Hans-CN/favicon.svg'/></a>
 </p>
 <h1 align="center">
     核污染水的真相
@@ -7,22 +7,11 @@
 <h4 align="center">
     致力于反对核污染水排海并提供可能的解决方案。
 </h4>
-<h4 align="center">
-    简体中文 |
-    <a href="README_zh-Hant-CN.md"> 繁體中文</a> |
-    <a href="README_EN.md"> English</a>
-</h4>
 
-欢迎并感谢访问我们的网站，这是一个致力于反对核污染水排海并提供可能的解决方案的平台。我们旨在提供全面的相关资料，以便公众了解和关注这个重要议题。核污染水对环境和人类健康造成严重威胁，我们坚信通过集结信息和共同努力，可以达到更清洁和可持续的解决方案。
+<p align="center"><a href="https://Nuc.PJ568.eu.org">访问网站</a></p>
 
-本网站为您提供以下内容：
+> 详细信息请参考[主 README](../../blob/home/README.md) 。
 
-1. **科学知识和数据：** 我们收集了关于核污染水的科学研究、数据和报告，帮助您了解其影响和潜在风险。
+> 詳細信息請參考[主 README](../../blob/home/README_zh-Hant-CN.md) 。
 
-2. **法律法规：** 探讨各国和国际层面的法律法规，以及与核污染水处理和排放相关的政策和法规。
-
-3. **行动倡议：** 我们介绍了不同的环保倡议和行动，鼓励公众参与，共同争取更健康的环境未来。
-
-4. **社区参与：** 我们提供一个让关心环境问题的人们能够互相交流、分享经验和行动计划的平台。
-
-请加入我们，一起为反对核污染水排海并提供可能的解决方案的目标努力。通过教育、合作和行动，我们可以为我们的地球创造一个更加可持续和清洁的未来。
+> For more infomation, please checkout [the main README](../../blob/home/README_EN.md).
