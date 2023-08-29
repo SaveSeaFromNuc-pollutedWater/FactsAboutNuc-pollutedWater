@@ -1,0 +1,89 @@
+name: HomeBuildCI
+
+on:
+  push:
+    branches:
+      - '**'
+      - '!release'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # To push a branch 
+      pull-requests: write  # To create a PR from that branch
+    steps:
+      # Check
+      - uses: actions/checkout@v3
+        with:
+          ref: home
+          submodules: recursive
+      - run: |
+          echo '创建 temp/：'
+          mkdir /home/runner/temp
+          echo '复制 ./* 到 /home/runner/temp/*：'
+          cp -v -u -r ./* /home/runner/temp/
+          echo '检查 temp/：'
+          ls /home/runner/temp/
+
+      # Run merge home and release
+      - uses: actions/checkout@v3
+        with:
+          ref: release
+      - run: |
+          echo '如果存在则删除 ./css：'
+          if [ -d "./css/" ];then
+          rm -r ./css/
+          else
+          echo "文件夹不存在。"
+          fi;
+          echo '复制 /home/runner/temp/css/ 到 ./css/：'
+          cp -v -u -r /home/runner/temp/css/ ./css/
+      - run: |
+          echo '如果存在则删除 ./index.html：'
+          if [ ! -f "./index.html" ];then
+          echo "文件不存在"
+          else
+          rm -d ./index.html
+          fi
+          echo '复制 /home/runner/temp/index.html 到 ./index.html：'
+          cp -v -u -r /home/runner/temp/index.html ./index.html
+      - run: |
+          echo '如果存在则删除 ./404.html：'
+          if [ ! -f "./404.html" ];then
+          echo "文件不存在"
+          else
+          rm -d ./404.html
+          fi
+          echo '复制 /home/runner/temp/404.html 到 ./404.html：'
+          cp -v -u -r /home/runner/temp/404.html ./404.html
+      - run: |
+          echo '如果存在则删除 ./Community.html：'
+          if [ ! -f "./Community.html" ];then
+          echo "文件不存在"
+          else
+          rm -d ./Community.html
+          fi
+          echo '复制 /home/runner/temp/Community.html 到 ./Community.html：'
+          cp -v -u -r /home/runner/temp/Community.html ./Community.html
+
+      - name: Generate the sitemap
+        id: sitemap
+        uses: cicirello/generate-sitemap@v1
+        with:
+          base-url-path: https://nuc.pj568.eu.org/
+
+      - name: Output sitemap stats
+        run: |
+          echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
+          echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
+          echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }}"
+
+      # Deploy
+      - uses: JamesIves/github-pages-deploy-action@4.1.7
+        with:
+          branch: release # The branch the action should deploy to.
+          folder: . # The folder the action should deploy.
+
+      - name: Ping Google
+        run: curl https://www.google.com/ping?sitemap=https://nuc.pj568.eu.org/sitemap.xml
