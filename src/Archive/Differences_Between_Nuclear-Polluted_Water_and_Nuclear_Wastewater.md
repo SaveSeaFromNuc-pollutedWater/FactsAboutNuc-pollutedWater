@@ -4,15 +4,15 @@
 
 ### 对比图表
 
-| | 产出方式 | 放射性同位素种类 | 放射性同位素含量 |
+| 类型 | 产出方式 | 放射性同位素种类 | 放射性同位素含量 |
 |--:|:--|:--|:--|
 | 福岛核电站事故中的核污染水 | 直接接触反应堆中放射性物质的地下水、雨水、海水等混合稀释后处理 | 根据[东京电力公司数据](https://www4.tepco.co.jp/en/press/corp-com/release/2012/1205638_1870.html)，核污染水中包含63种放射性物质，包含：铯134、铯137、锶90、碳14、碘129、钴60、钌106、放射性氚（超重水）等（实际上由于核心直接接触，可能包含铀等超过63种放射性元素） | 惰性气体：~500[PBq](#pbq)；<br/>碘131：~500[PBq](#pbq)；<br/>铯134：~10[PBq](#pbq)；<br/>铯137：~10[PBq](#pbq)；<br/>使用[国际核事件分级](#twi)评价（参考）：~900[PBq](#pbq)。[②](#twi)|
 | 标准核废水 | 工业产生水、地面排水、设备清洗、冷却水等经过处理 | [详见③](#gov) | 气态放射性流出物：惰性气体7.00E+14Bq；碘2.50E+10Bq；粒子（半衰期≥8d）3.80E+09Bq；碳14 2.20E+12Bq；气态氚2.40E+13Bq；液体放射性流出物：碳14 3.00E+11Bq；液态氚2.25E+14Bq；其余核素1.30E+11Bq。[③](#gov) |
 
 >“`~`”符号表示“`约等于`”。
 <blockquote>
-<p id="pbq">①：1PBq = 1×10^16Bq; 详见 <a href="https://www4.tepco.co.jp/en/press/corp-com/release/betu12_e/images/120620e0102.pdf">Fukushima Nuclear Accidents Investigation Report: Main body</a> 第 43 面（页码标注 `40`）`Table 3` 的 `*7` 标识</p>
-<p id="twi">②：关于东京电力公司放射性同位素泄露情况，详见 <a href="https://www4.tepco.co.jp/en/press/corp-com/release/betu12_e/images/120620e0102.pdf">Fukushima Nuclear Accidents Investigation Report: Main body</a> 第 43 面（页码标注 `40`）`Table 3`</p>
+<p id="pbq">①：1PBq = 1×10^16Bq; 详见 <a href="https://www4.tepco.co.jp/en/press/corp-com/release/betu12_e/images/120620e0102.pdf">Fukushima Nuclear Accidents Investigation Report: Main body</a> 第 43 面（页码标注 <code class="hljs">40</code>）<code class="hljs">Table 3</code> 的 <code class="hljs">*7</code> 标识</p>
+<p id="twi">②：关于东京电力公司放射性同位素泄露情况，详见 <a href="https://www4.tepco.co.jp/en/press/corp-com/release/betu12_e/images/120620e0102.pdf">Fukushima Nuclear Accidents Investigation Report: Main body</a> 第 43 面（页码标注 <code class="hljs">40</code>）<code class="hljs">Table 3</code></p>
 <p id="gov">③：详见<a href="https://www.mee.gov.cn/gkml/sthjbgw/haq/201707/t20170717_417967.htm">《关于大亚湾核电基地六台机组放射性流出物年排放量限值的批复》</a></p>
 </blockquote>
 
