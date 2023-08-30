@@ -1,6 +1,6 @@
 # 核污染水与核废水的区别
 
-## 图标
+## 图表
 
 ### 对比图表
 
@@ -38,6 +38,8 @@
 > 我们的核废料根据半衰期是否超过30年为界分为短寿命废物、长寿命废物。
 
 ## 具体区别
+
+![区分图](https://mmbiz.qpic.cn/mmbiz_png/8vd2Hk2TS2MHg1KtZ9fZlqcVgV7EnYeck1Lw6VfxDAZ393t65D7iarzYaqytUshwDd21SDtWRERkswMS23icayNQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
 
 ### 核污染水
 
