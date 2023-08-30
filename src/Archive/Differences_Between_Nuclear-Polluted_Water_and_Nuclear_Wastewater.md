@@ -39,7 +39,7 @@
 
 ## 具体区别
 
-![区分图](https://mmbiz.qpic.cn/mmbiz_png/8vd2Hk2TS2MHg1KtZ9fZlqcVgV7EnYeck1Lw6VfxDAZ393t65D7iarzYaqytUshwDd21SDtWRERkswMS23icayNQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+![区分图](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F0829%2F3b3457a0j00s05d8m005cc000rs009jg.jpg&thumbnail=660x2147483647&quality=80&type=jpg)
 
 ### 核污染水
 
