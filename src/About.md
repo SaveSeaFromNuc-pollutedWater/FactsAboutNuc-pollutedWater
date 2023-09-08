@@ -16,4 +16,28 @@
 
 4. **社区参与：** 我们提供一个让关心环境问题的人们能够互相交流、分享经验和行动计划的平台。
 
-请[加入我们](https://github.com/SaveSeaFromNuc-pollutedWater/FactsAboutNuc-pollutedWater)，一起为反对核污染水排海并提供可能的解决方案的目标努力。通过教育、合作和行动，我们可以为我们的地球创造一个更加可持续和清洁的未来。
+请[参与贡献](https://github.com/SaveSeaFromNuc-pollutedWater/FactsAboutNuc-pollutedWater)，一起为反对核污染水排海并提供可能的解决方案的目标努力。通过教育、合作和行动，我们可以为我们的地球创造一个更加可持续和清洁的未来。
+
+## 代码或内容贡献
+
+欢迎每一位对本项目感兴趣的朋友贡献代码和内容。
+
+可查阅[贡献文档](https://Nuc.PJ568.eu.org/zh-Hans-CN/Contribute/)以了解相关信息。
+
+在提交代码前请确保您了解 [mdbook](https://rust-lang.github.io/mdBook/) 系统。
+
+### 参考
+
+* Fork 源码，下载到本地并运行项目；
+* 添加/修改代码；
+* <b style="color:red">⚠️对相关改动进行全面的自我测试⚠️</b>；
+* 确认无误后提交修改到 Github；
+* 提交 Pull Request；
+
+### 请注意
+
+* 单次 Pull Request 不应提交过多修改，请确保每次提交都针对特定的功能且务必说明本次改动的具体目的，例如：修复某 bug 、优化某方法 等，方便进行 Code Review；
+* 对于 bug 的修复，应该将本次 Pull Request 和相对应 bug 的 issue 关联起来，让别人知道该问题已经被修复；
+* 对于较大的新功能，你需要先提交 Issues，例如 “添加 XXX 功能”，确认该功能有被添加的必要后，再开始工作；
+* 对于一些主观的样式、交互逻辑调整：如颜色、图标的使用，某些预设配置的增减修改等，一般不予通过。但可以在 Discussions 中进行讨论；
+* 其他如简单的代码优化、文档修正等，只要修改合理都会被接受。
