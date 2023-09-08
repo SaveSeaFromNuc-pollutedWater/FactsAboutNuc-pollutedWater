@@ -28,3 +28,27 @@ This website provides you with the following content:
 4. **Community Engagement:** We provide a platform for individuals concerned about environmental issues to interact, share experiences, and plan actions.
 
 Please join us in our efforts to oppose the dischargement of nuclear-polluted water into the sea and provide potential solutions. Through education, cooperation, and action, we can create a more sustainable and clean future for our planet.
+
+## Code or Content Contributions
+
+Welcome to all friends who are interested in contributing code and content to this project.
+
+You can refer to the [Contribution Guide](https://Nuc.PJ568.eu.org/zh-Hans-CN/Contribute/?language=english) for relevant information.
+
+Before submitting code, please make sure you are familiar with the [mdBook](https://rust-lang.github.io/mdBook/) system.
+
+### Guidelines
+
+* Fork the source code, download it to your local machine, and run the project.
+* Add/modify code.
+* <b style="color:red">⚠️ Thoroughly test the changes you made ⚠️</b>.
+* After confirming correctness, submit your changes to GitHub.
+* Create a Pull Request.
+
+### Please Note
+
+* A single Pull Request should not include too many modifications. Please ensure that each submission is specific to a particular feature, and be sure to explain the purpose of the changes, e.g., fixing a specific bug, optimizing a method, etc., to facilitate code review.
+* For bug fixes, you should associate the Pull Request with the corresponding bug issue so that others know the issue has been addressed.
+* For significant new features, you should first submit an issue, such as "Add XXX feature," and only begin work after confirming the necessity of adding that feature.
+* For subjective style and interaction logic adjustments, such as color, icon usage, and certain preset configuration additions or modifications, they are generally not accepted. However, you can discuss these in the Discussions section.
+* Other changes, such as simple code optimizations and documentation corrections, will be accepted as long as they are reasonable.
