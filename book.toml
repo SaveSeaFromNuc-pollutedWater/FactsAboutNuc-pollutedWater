@@ -8,7 +8,7 @@ description = "致力于反对核污染水排海并提供可能的解决方案�
 
 [output.html]
 default-theme = "light"
-preferred-dark-theme = "coal"
+preferred-dark-theme = "navy"
 site-url = "/zh-Hans-CN/"
 additional-css = ["assets/loading.css", "assets/translate.css"]
 additional-js = ["assets/loading.js", "assets/translate_lib.js", "assets/giscus.js"]
