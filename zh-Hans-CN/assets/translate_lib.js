@@ -1,6 +1,6 @@
 try{
     translate.listener.start();
-    translate.language.setLocal('chinese_simplified');
+    translate.language.getLocal();
     translate.setAutoDiscriminateLocalLanguage();
     translate.language.setUrlParamControl();
     translate.ignore.class.push('notTranslate');
