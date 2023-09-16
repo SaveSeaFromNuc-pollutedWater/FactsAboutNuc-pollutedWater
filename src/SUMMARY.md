@@ -1,8 +1,6 @@
 # Summary
 
 [`日本核污染水排海`事件](./index.md)
-[关于本项目](./About.md)
-[`核污染水`论坛](./Community.md)
 
 ---
 
@@ -35,4 +33,5 @@
 ---
 
 [关于本项目](./About.md)
+[关于`核污染水`论坛](./Community.md)
 [贡献者名单](./Contributors/index.md)
