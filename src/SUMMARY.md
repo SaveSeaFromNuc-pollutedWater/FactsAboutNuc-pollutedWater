@@ -12,6 +12,7 @@
 # 科普
 
 - [核污染水与核废水的区别](./Archive/Differences_Between_Nuclear-Polluted_Water_and_Nuclear_Wastewater.md)
+- [放射性同位素半衰期相关信息表](./Archive/Half_life_list.md)
 <!-- - [多核素去除装置（ALPS）可靠性存疑](./Archive/About_ALPS.md) -->
 - [正在编写……]()
 
