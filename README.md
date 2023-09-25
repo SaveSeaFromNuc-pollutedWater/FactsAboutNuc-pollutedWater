@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://Nuc.PJ568.eu.org"><img height="128" src='https://Nuc.PJ568.eu.org/zh-Hans-CN/favicon.svg'/></a>
+    <a href="https://Nuc.PJ568.eu.org"><img width="128" src='https://Nuc.PJ568.eu.org/zh-Hans-CN/favicon.svg'/></a>
 </p>
 <h1 align="center">
     核污染水的真相
