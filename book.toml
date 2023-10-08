@@ -19,6 +19,9 @@ edit-url-template = "https://github.com/SaveSeaFromNuc-pollutedWater/FactsAboutN
 enable = true
 level = 0
 
+[output.html.playground]
+copyable = true
+
 [preprocessor.index]
 
 [preprocessor.links]
