@@ -25,6 +25,7 @@ jobs:
           mdbook-version: '0.4.29'
           # mdbook-version: 'latest'
 
+      - run: mdbook -V && mdbook build && mdbook test
       - run: |
           echo '创建 tree/：'
           mkdir /home/runner/tree
