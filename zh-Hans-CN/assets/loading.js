@@ -1,5 +1,5 @@
 // const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
-const position = document.querySelector('#loading');
+const position = document.getElementById('loading');
 
 document.onreadystatechange=function () {
     if (window.location.href.indexOf("print.html") === -1) {
