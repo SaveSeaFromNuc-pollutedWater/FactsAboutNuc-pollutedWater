@@ -6,5 +6,4 @@ try{
     translate.ignore.class.push('notTranslate');
 }
 catch(e){console.log(e);}
-translate.setUseVersion2();
 translate.execute();
