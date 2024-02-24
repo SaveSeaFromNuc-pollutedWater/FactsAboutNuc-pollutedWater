@@ -1,17 +1,17 @@
 <!DOCTYPE HTML>
-<html lang="zh" class="sidebar-visible no-js rust">
+<html lang="zh" class="rust" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title class="notTranslate">核污染水的真相</title>
-        <meta name="robots" content="noindex" />
+        <meta name="robots" content="noindex">
 
 
         <!-- Custom HTML head -->
         
         <meta name="description" content="致力于反对核污染水排海并提供可能的解决方案。">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
@@ -35,7 +35,7 @@
         <link rel="stylesheet" href="assets/translate.css">
 
     </head>
-    <body>
+    <body class="sidebar-visible no-js">
     <div id="loading">
         <div id="loading_bg">
             <img alt="正在加载" class="loader" src="//Nuc.PJ568.eu.org/css/loading.svg"/>
@@ -70,57 +70,86 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('no-js')
             html.classList.remove('rust')
             html.classList.add(theme);
-            html.classList.add('js');
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
         </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var html = document.querySelector('html');
+            var body = document.querySelector('body');
             var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
                 <ol class="chapter"><li class="chapter-item affix "><a href="index.html">日本核污染水排海事件</a></li><li class="spacer"></li><li class="chapter-item affix "><li class="part-title">辟谣</li><li class="chapter-item "><div><strong aria-hidden="true">1.</strong> 其他核电站排放废水含氚量更高，因此福岛核污水影响小？否！</div></li><li class="chapter-item "><div><strong aria-hidden="true">2.</strong> 正在编写……</div></li><li class="chapter-item affix "><li class="part-title">科普</li><li class="chapter-item "><a href="Archive/Differences_Between_Nuclear-Polluted_Water_and_Nuclear_Wastewater.html"><strong aria-hidden="true">3.</strong> 核污染水与核废水的区别</a></li><li class="chapter-item "><a href="Archive/Half_life_list.html"><strong aria-hidden="true">4.</strong> 放射性同位素半衰期相关信息表</a></li><li class="chapter-item "><div><strong aria-hidden="true">5.</strong> 正在编写……</div></li><li class="chapter-item affix "><li class="part-title">新闻</li><li class="chapter-item "><a href="News/180_times_Cesium_levels_exceeding_the_standard.html"><strong aria-hidden="true">6.</strong> 海鱼铯超标180倍</a></li><li class="chapter-item "><a href="News/Fukushima_fishermen_still_oppose_water_release_after_IAEA_report.html"><strong aria-hidden="true">7.</strong> 福岛渔民在国际原子能机构报告后仍抵制污水排海</a></li><li class="chapter-item "><div><strong aria-hidden="true">8.</strong> 正在编写……</div></li><li class="chapter-item affix "><li class="part-title">提交贡献</li><li class="chapter-item "><a href="Contribute/index.html"><strong aria-hidden="true">9.</strong> 代码或内容贡献</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="Contribute/Feedback.html"><strong aria-hidden="true">9.1.</strong> 报告错误或问题</a></li><li class="chapter-item "><a href="Contribute/Creation.html"><strong aria-hidden="true">9.2.</strong> 内容创作</a></li><li class="chapter-item "><a href="Contribute/Words_translate.html"><strong aria-hidden="true">9.3.</strong> 翻译相关术语</a></li><li class="chapter-item "><div><strong aria-hidden="true">9.4.</strong> 创建离线翻译</div></li><li class="chapter-item "><a href="Contribute/File_structure.html"><strong aria-hidden="true">9.5.</strong> 目录文件结构</a></li><li class="spacer"></li></ol></li><li class="chapter-item "><a href="About.html">关于本项目</a></li><li class="chapter-item affix "><a href="Community.html">关于核污染水论坛</a></li><li class="chapter-item affix "><a href="Contributors/index.html">贡献者名单</a></li></ol>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
         </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
                                 <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="目录表 - Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="目录表" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
-                        <button id="theme-toggle" class="icon-button" type="button" title="更改主题 - Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="更改主题" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">亮 - Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="rust">锈 - Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">碳 - Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="navy">海魂 - Navy</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="ayu">阿黑 - Ayu</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">亮</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">锈</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">碳</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">海魂</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">阿黑</button></li>
                         </ul>
-                        <script src="https://res.zvo.cn/translate/translate.js"></script>
-                        <button id="translate" class="icon-button" type="button" title="更改语言 - Change language" aria-label="Change language" aria-haspopup="true" aria-expanded="false">
+                        <script src="//res.zvo.cn/translate/translate.js"></script>
+                        <button id="translate" class="icon-button" type="button" title="更改语言" aria-label="Change language" aria-haspopup="true" aria-expanded="false">
                             <i class="fa fa-language"></i>
                         </button>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="搜索 [S]" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -128,13 +157,13 @@
                     <h1 class="menu-title">核污染水的真相</h1>
 
                     <div class="right-buttons">
-                        <a href="//Nuc.PJ568.eu.org" onclick="startLoading()" title="返回主页 - Back home">
+                        <a href="../" onclick="startLoading()" title="返回主页">
                             <i class="fa fa-home"></i>
                         </a>
-                        <a href="print.html" onclick="startLoading()" title="打印本书 - Print this book" aria-label="Print this book">
+                        <a href="print.html" title="打印本书" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        <a href="https://github.com/SaveSeaFromNuc-pollutedWater/FactsAboutNuc-pollutedWater/tree/zh-Hans-CN" onclick="startLoading()" title="仓库链接 - Git repository" aria-label="Git repository">
+                        <a href="https://github.com/SaveSeaFromNuc-pollutedWater/FactsAboutNuc-pollutedWater/tree/zh-Hans-CN" title="Git 仓库" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
 
@@ -143,7 +172,7 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="在本书中搜索：Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="在本站搜索：" aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -311,17 +340,17 @@
 <p>Fisheries associations in Fukushima Prefecture told Japan's industry minister Tuesday they remain opposed to releasing treated radioactive water from a crippled nuclear power plant into the sea despite a U.N. watchdog's safety assurances for the plan.</p>
 <p>Economy, Trade and Industry Minister Yasutoshi Nishimura briefed the Fukushima Prefectural Federation of Fisheries Cooperative Associations in their meeting in northeastern Japan about the International Atomic Energy Agency's comprehensive assessment released last week.</p>
 <p>The government is seeking their understanding as it aims to start releasing the water around this summer.</p>
-<p>The IAEA said in the report that the plan is &quot;consistent&quot; with international safety standards and would have &quot;a negligible radiological impact on people and the environment.&quot; But local fishermen expressed concerns over potential reputational damage to their products.</p>
+<p>The IAEA said in the report that the plan is "consistent" with international safety standards and would have "a negligible radiological impact on people and the environment." But local fishermen expressed concerns over potential reputational damage to their products.</p>
 <p>Countries like China, Russia and North Korea have criticized Japan over the release plan.</p>
 <p><img src="https://img.kyodonews.net/english/public/images/posts/41f81842f1e3289800daca2b4932caae/photo_l.jpg" alt="Tetsu Nozaki (L), head of the Fukushima Prefectural Federation of Fisheries Cooperative Associations, speaks to Economy, Trade and Industry Minister Yasutoshi Nishimura during a meeting in Iwaki, Fukushima Prefecture, on Julyl 11, 2023. (Kyodo)" /></p>
 <p>Nishimura told the fishermen that the release of the treated water is a necessary step toward completing the decommissioning of the damaged reactors at the Fukushima Daiichi power plant and facilitating the recovery of Fukushima from the 2011 disaster. The reactors suffered meltdowns triggered by a massive earthquake and tsunami.</p>
 <p>The water has been kept in over 1,000 tanks installed at the site after going through the advanced liquid processing system that removes most radionuclides except tritium, but the containers are nearing capacity.</p>
-<p>&quot;We basically take the position of opposing the discharge of treated water into the sea,&quot; Tetsu Nozaki, head of the federation, told Nishimura during the meeting.</p>
+<p>"We basically take the position of opposing the discharge of treated water into the sea," Tetsu Nozaki, head of the federation, told Nishimura during the meeting.</p>
 <p>But there was also an opinion among fishermen that they would accept the release if it proves not to impact people's health, according to a fisheries source who attended the meeting.</p>
-<p>Nishimura told reporters that dialogue between fishermen and the government should continue after Tuesday's meeting and that he would like to &quot;deepen (mutual) trust through sincere explanations.&quot;</p>
-<p>The government and plant operator Tokyo Electric Power Company Holdings Inc. promised local fishermen in 2015 that they would not release the treated water into the sea without gaining the &quot;understanding&quot; of concerned parties.</p>
+<p>Nishimura told reporters that dialogue between fishermen and the government should continue after Tuesday's meeting and that he would like to "deepen (mutual) trust through sincere explanations."</p>
+<p>The government and plant operator Tokyo Electric Power Company Holdings Inc. promised local fishermen in 2015 that they would not release the treated water into the sea without gaining the "understanding" of concerned parties.</p>
 <p>Following the IAEA's announcement of its findings, China suggested it may expand its restrictions on food imports from Japan if the discharge plan goes ahead.</p>
-<p>In Beijing, Chinese Foreign Ministry spokesman Wang Wenbin sarcastically suggested at a press conference Tuesday that Japan should &quot;make good use of this water for drinking and swimming&quot; if it believes in its safety, instead of discharging it into the ocean and raising international concerns.</p>
+<p>In Beijing, Chinese Foreign Ministry spokesman Wang Wenbin sarcastically suggested at a press conference Tuesday that Japan should "make good use of this water for drinking and swimming" if it believes in its safety, instead of discharging it into the ocean and raising international concerns.</p>
 <p>Other countries, including South Korea and New Zealand, have shown confidence in the IAEA's assessment.</p>
 <p>South Korea's government, following on-site observations by a delegation of experts at the Fukushima Daiichi plant in May, has affirmed that the treated water from Fukushima is in line with international safety standards based on its own analysis. The country's opposition lawmakers, however, still oppose the discharge.</p>
 <p>The treated water with trace amounts of tritium will be diluted to one-40th of the concentration permitted under Japanese safety standards before being released via an underwater tunnel 1 kilometer off the power plant.</p>
@@ -478,7 +507,6 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
 
-                <div style="clear: both"></div>
             </nav>
 
         </div>
